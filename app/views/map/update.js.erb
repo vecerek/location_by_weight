@@ -1,0 +1,9 @@
+$('#explainer_text').append("<div class=\"w-100 h-15\"></div><p class=\"hidden\">Based on your weight, you're most probably come from the following place:</p>");
+var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: <%=raw @location.to_json %>
+});
+var marker = new google.maps.Marker({
+    position: <%=raw @location.to_json %>,
+    map: map
+});

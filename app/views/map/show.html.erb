@@ -1,0 +1,29 @@
+<h3>Weight-based Location</h3>
+<div class="container">
+  <div id="form" class="row">
+    <%= render partial: 'form' %>
+  </div>
+  <div id="explainer_text" class="row"></div>
+  <div class="w-100 h-15"></div>
+  <div class="row">
+    <div class="col-8 offset-2">
+      <div id="map"></div>
+    </div>
+  </div>
+</div>
+<script>
+    function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=<%= @api_key %>&callback=initMap">
+</script>

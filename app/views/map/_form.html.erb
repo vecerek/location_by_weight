@@ -1,0 +1,7 @@
+<%= form_for :wger, url: '/map/update', remote: true do |f| %>
+    <%= f.label :fapikey, 'Your API key:', class: 'control-label' %>
+    <%= f.text_field :api_key, class: 'form-control' %>
+    <span class="footnote"><sup>*</sup><i>you can test our service using the Test API Key:</i> <b>abac4b38d14347c3a570fa918bf17112a3450314</b></span>
+    <div class="w-100 h-15"></div>
+    <%= f.submit value: 'Locate me', class: 'btn btn-default btn-primary' %>
+<% end %>

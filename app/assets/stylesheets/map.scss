@@ -1,0 +1,32 @@
+// Place all the styles related to the map controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$mapWidth: 100%;
+$mapHeight: 350px;
+
+.nav {
+  background-color: #eee;
+  padding: 10px 15px;
+}
+
+.container {
+  margin-top: 25px;
+}
+
+.footnote {
+  font-size: 65%;
+}
+
+#map {
+  width: $mapWidth;
+  height: $mapHeight;
+}
+
+.h-15 {
+  height: 15px;
+}
+
+.no-padding {
+  padding: 0!important;
+}

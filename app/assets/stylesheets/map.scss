@@ -10,8 +10,24 @@ $mapHeight: 350px;
   padding: 10px 15px;
 }
 
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+#github-logo {
+  min-width: 40px;
+  width: 3vw;
+  max-width: 80px;
+  margin-right: 10px;
+}
+
 .container {
   margin-top: 25px;
+}
+
+.justify-start {
+  margin-right: auto;
 }
 
 .footnote {
